@@ -1,0 +1,79 @@
+<! DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1 id="title">Product Customer Feedback Form</h1>
+    <p id="description">
+      Thank you for taking time to provide feedback. We appreciate hearing from
+      you and will review your comments carefully.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name"
+          >Full Name
+          <input type="text" required id="name" placeholder="Enter Your Name"
+        /></label>
+        <label for="email" id="email-label">
+          Email-Address
+          <input
+            type="email"
+            required
+            id="email"
+            placeholder="Enter Your email"
+          />
+        </label>
+        <label id="number-label" for="number"
+          >Your age
+          <input
+            type="number"
+            min="10"
+            max="11"
+            placeholder="Enter Your Age"
+            id="number"
+        /></label>
+        <label id="phone-label" for="contact"
+          >Contact Number
+          <input
+            type="text"
+            placeholder="Enter Your contact Number"
+            id="contact"
+        /></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          How did you hear about us?
+          <select id="dropdown">
+            <option>Selec Options</option>
+            <option>Newspaper</option>
+            <option>Through mail</option>
+            <option>Social Media</option>
+            <option>Through Friends</option>
+          </select>
+        </label>
+        <label
+          >Which feature do you like about our product?
+        </label>
+        <input type="checkbox" value="1" /> Processor
+        <input type="checkbox" value="2" /> Display
+        <input type="checkbox" value="3" /> hardwere
+        <input type="checkbox" value="4" /> UI
+        <label>
+          Would you recommend it to your friends and colleagues?
+        </label>
+        <input type="radio" name="recommendation" value="1" /> Yes
+        <input type="radio" name="recommendation" value="2" /> No
+        <label>
+          Do you have any suggestions to improve our product and service?
+          <textarea rows="10" cols="50"></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
